@@ -48,9 +48,9 @@
 
       - name: User defined variables in servers
         ansible.builtin.user:
-           name: "{{Escobilla}}"
+           name: Escobilla
            comment: Name
            uid: 1023
            group: root
            createhome: yes
-           home: /home/"{{Escobilla}}"
+           home: /home/workstation
