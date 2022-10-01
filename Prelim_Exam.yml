@@ -34,3 +34,9 @@
              - java-1.8.0-openjdk
           state: latest
         when: ansible_distribution == "CentOS"
+
+      - name: Make pip as default
+        shell: update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+
+      - name: Make python as default
+        shell: update-alternatives --install /usr/bin/python python /usr/bin/python3 1
